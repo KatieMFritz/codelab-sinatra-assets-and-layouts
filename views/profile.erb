@@ -1,4 +1,4 @@
-<% @title="Profile" %>
+<% @title = params['name'] + "'s Profile"%>
 
     <div class="row">
       <div class="card col-lg-6 clearfix">
@@ -9,7 +9,7 @@
           <h1><%= params['name'] %></h2>
           <p><strong>Age:</strong> <%= params['age'] %></p>
           <p><strong>Star Sign:</strong> <%= params['star_sign'] %></p>
-          <p><strong>Favorite Color:</strong> <span id="color"><%= params['color'] %>;</span></p>
+          <p><strong>Favorite Color:</strong> <span id="color"><%= params['color'] %></span></p>
           <p><strong>Hometown:</strong> <%= params['hometown'] %></p>
           <p><strong>What TV show did you watch most recently?</strong> <em><%= params['tv'] %></em></p>
         </div>
